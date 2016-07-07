@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Cloudinsight Notifier",
+  "version": "0.0.1",
+  "description": "Alarm notifier for Cloudinsight",
+  "background": {
+    "scripts": [
+      "lib/background.js"
+    ]
+  },
+  "permissions": [
+    "alarms",
+    "tabs",
+    "*://cloud.oneapm.com/*"
+  ],
+  "browser_action": {
+    "default_title": "Cloudinsight Notifier"
+  }
+}
